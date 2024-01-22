@@ -19,7 +19,7 @@ int	ft_strat(char const *s1, char const *set)
 	size_t	i;
 
 	len = ft_strlen(s1);
-	i = 1;
+	i = 0;
 	while (i < len)
 	{
 		if (ft_strchr(set, s1[i]) == 0)
@@ -35,10 +35,10 @@ int	ft_end(char const *s1, char const *set)
 	size_t	i;
 
 	len = ft_strlen(s1);
-	i = 1;
+	i = 0;
 	while (i < len)
 	{
-		if (ft_strchr(set, s1[len - i -1]) == 0)
+		if (ft_strchr(set, s1[len - i - 1]) == 0)
 			break;
 		i++;
 	}
@@ -66,7 +66,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 	return (str);
 }
 
-#include <stdlib.h>
+/*#include <stdlib.h>
 
 int main(void)
 {
@@ -74,7 +74,7 @@ int main(void)
 	const char *set = " .";
 	char *newchar = ft_strtrim(s1, set);
 
-	printf("%c\n", *s1);
-	printf("%c\n", *newchar);
+	printf("%d\n", *s1);
+	printf("%d\n", *newchar);
 	free(newchar);
-}
+}*/
