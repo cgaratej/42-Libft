@@ -6,7 +6,7 @@
 /*   By: cgaratej <cgaratej@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/22 16:45:52 by cgaratej          #+#    #+#             */
-/*   Updated: 2024/01/22 16:45:55 by cgaratej         ###   ########.fr       */
+/*   Updated: 2024/01/22 17:24:34 by cgaratej         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,7 +56,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 	if (s1 == 0)
 		return (0);
 	if (set == 0)
-		retrun (ft_strdup(s1));
+		return (ft_strdup(s1));
 	if (start >= end)
 		return (ft_strdup(""));
 	str = (char *)malloc(sizeof(char) * (end - start + 1));
@@ -74,7 +74,7 @@ int main(void)
 	const char *set = " .";
 	char *newchar = ft_strtrim(s1, set);
 
-	printf("%c\n", s1);
-	printf("%c\n", newchar);
+	printf("%c\n", *s1);
+	printf("%c\n", *newchar);
 	free(newchar);
 }
