@@ -6,7 +6,7 @@
 /*   By: cgaratej <cgaratej@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/10 10:41:56 by cgaratej          #+#    #+#             */
-/*   Updated: 2024/01/19 14:54:42 by cgaratej         ###   ########.fr       */
+/*   Updated: 2024/01/23 11:16:04 by cgaratej         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,6 +41,8 @@ void	*ft_calloc(size_t nmemb, size_t size);//C
 char	*ft_strdup(const char *s1); //C
 char	*ft_substr(char const *s, unsigned int start, size_t len); //C
 char	*ft_strjoin(char const *s1, char const *s2); //C
-char	*ft_strtrim(char const *s1, char const *set); //f
+char	*ft_strtrim(char const *s1, char const *set); //C
+char	**ft_split(char const *s, char c); //f
+char	*ft_itoa(int n); //C
 
 #endif
