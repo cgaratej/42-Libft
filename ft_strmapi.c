@@ -6,7 +6,7 @@
 /*   By: cgaratej <cgaratej@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/23 17:52:03 by cgaratej          #+#    #+#             */
-/*   Updated: 2024/01/23 18:14:04 by cgaratej         ###   ########.fr       */
+/*   Updated: 2024/01/24 13:22:10 by cgaratej         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,3 +31,19 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	strnew[i] = '\0';
 	return (strnew);
 }
+
+/*#include <stdio.h>
+
+char	ft_myfuncion(unsigned int i, char c)
+{
+	printf("%d %c\n", i, c);
+	return (c - 32);
+}
+
+int	main(void)
+{
+	char str[10] = "hola";
+	char *result = ft_strmapi(str, ft_myfuncion);
+	printf("%s\n", result);
+	return (0);
+}*/
