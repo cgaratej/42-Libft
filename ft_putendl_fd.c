@@ -6,7 +6,7 @@
 /*   By: cgaratej <cgaratej@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/25 11:11:42 by cgaratej          #+#    #+#             */
-/*   Updated: 2024/01/25 11:18:03 by cgaratej         ###   ########.fr       */
+/*   Updated: 2024/01/25 12:05:08 by cgaratej         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,9 +20,7 @@ void	ft_putendl_fd(char *s, int fd)
 
 /*int main(void)
 {
-	char *c = "hola";
-	ft_putendl_fd(c, 1);
-	char *e = "holad";
-	ft_putendl_fd(e, 1);
+	ft_putendl_fd("hola", 1);
+	ft_putendl_fd("ed", 1);
 	return (0);
 }*/

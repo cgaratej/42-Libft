@@ -6,7 +6,7 @@
 /*   By: cgaratej <cgaratej@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/19 14:03:40 by cgaratej          #+#    #+#             */
-/*   Updated: 2024/01/19 15:32:32 by cgaratej         ###   ########.fr       */
+/*   Updated: 2024/01/25 15:58:18 by cgaratej         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,7 +46,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 int	main(void)
 {
 	const char *s1 = "hola";
-	const char *s2 = " mundo";
+	const char *s2 = " Ma";
 	char *cat = ft_strjoin(s1, s2);
 
 	printf("Contenido concatenado es: %s\n", cat);

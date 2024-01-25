@@ -6,7 +6,7 @@
 #    By: cgaratej <cgaratej@student.42barcel>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/01/17 12:27:13 by cgaratej          #+#    #+#              #
-#    Updated: 2024/01/25 11:18:41 by cgaratej         ###   ########.fr        #
+#    Updated: 2024/01/25 12:10:28 by cgaratej         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -38,12 +38,14 @@ SRC=ft_isalpha.c \
 	ft_substr.c \
 	ft_strjoin.c \
 	ft_strtrim.c \
+	ft_split.c \
 	ft_itoa.c \
 	ft_strmapi.c \
 	ft_striteri.c \
 	ft_putchar_fd.c \
 	ft_putstr_fd.c \
-	ft_putendl_fd.c
+	ft_putendl_fd.c \
+	ft_putnbr_fd.c
 
 OBJ=$(SRC:.c=.o)
 

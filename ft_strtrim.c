@@ -6,13 +6,13 @@
 /*   By: cgaratej <cgaratej@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/22 16:45:52 by cgaratej          #+#    #+#             */
-/*   Updated: 2024/01/23 11:12:42 by cgaratej         ###   ########.fr       */
+/*   Updated: 2024/01/25 18:54:29 by cgaratej         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_strat(char const *s1, char const *set)
+static int	ft_start(char const *s1, char const *set)
 {
 	size_t	len;
 	size_t	i;
@@ -28,7 +28,7 @@ int	ft_strat(char const *s1, char const *set)
 	return (i);
 }
 
-int	ft_end(char const *s1, char const *set)
+static int	ft_end(char const *s1, char const *set)
 {
 	size_t	len;
 	size_t	i;
@@ -50,7 +50,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 	size_t	end;
 	char	*str;
 
-	start = ft_strat(s1, set);
+	start = ft_start(s1, set);
 	end = ft_end(s1, set);
 	if (s1 == 0)
 		return (0);
