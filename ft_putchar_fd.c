@@ -1,42 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_striteri.c                                      :+:      :+:    :+:   */
+/*   ft_putchar_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cgaratej <cgaratej@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/01/24 13:24:01 by cgaratej          #+#    #+#             */
-/*   Updated: 2024/01/25 10:48:39 by cgaratej         ###   ########.fr       */
+/*   Created: 2024/01/25 10:52:48 by cgaratej          #+#    #+#             */
+/*   Updated: 2024/01/25 11:09:27 by cgaratej         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_striteri(char *s, void (*f)(unsigned int, char*))
+void	ft_putchar_fd(char c, int fd)
 {
-	unsigned int	i;
-
-	i = 0;
-	if (!s || !f)
-		return ;
-	while (s[i] != '\0')
-	{
-		f(i, &s[i]);
-		i++;
-	}
+	write(fd, &c, 1);
 }
 
-/*#include <stdio.h>
-
-void	ft_myfuncion(unsigned int i, char *c)
+/*int main(void)
 {
-	printf("%d %s\n", i, c);
-}
-
-int	main(void)
-{
-	char str[10] = "hola";
-	ft_striteri(str, *ft_myfuncion);
-	printf("%s\n", str);
+	char c = 'h';
+	ft_putchar_fd(c, 1);
 	return (0);
 }*/

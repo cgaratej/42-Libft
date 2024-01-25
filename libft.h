@@ -6,7 +6,7 @@
 /*   By: cgaratej <cgaratej@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/10 10:41:56 by cgaratej          #+#    #+#             */
-/*   Updated: 2024/01/24 13:24:41 by cgaratej         ###   ########.fr       */
+/*   Updated: 2024/01/25 11:10:58 by cgaratej         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,6 +46,9 @@ char	*ft_strtrim(char const *s1, char const *set); //C
 char	**ft_split(char const *s, char c); //f
 char	*ft_itoa(int n); //C
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char)); //C
-void	ft_striteri(char *s, void (*f)(unsigned int, char*));//
+void	ft_striteri(char *s, void (*f)(unsigned int, char*));//G
+void	ft_putchar_fd(char c, int fd);
+void	ft_putstr_fd(char *s, int fd);
+void	ft_putendl_fd(char *s, int fd);
 
 #endif
