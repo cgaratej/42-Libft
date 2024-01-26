@@ -6,7 +6,7 @@
 /*   By: cgaratej <cgaratej@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/18 17:38:12 by cgaratej          #+#    #+#             */
-/*   Updated: 2024/01/19 14:21:29 by cgaratej         ###   ########.fr       */
+/*   Updated: 2024/01/26 15:39:25 by cgaratej         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,25 +33,19 @@ char	*ft_strdup(const char *s1)
 }
 
 /*#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
 
 int main() {
     const char *original = "Hola, Mundo!";
     
-    // Duplicar la cadena
-    char *duplicate = strdup(original);
+    char *duplicate = ft_strdup(original);
 
-    if (duplicate != NULL) {
-        // Imprimir la cadena duplicada
+    if (duplicate != NULL)
+	{
+        printf("Cadena original: %s\n", original);
         printf("Cadena duplicada: %s\n", duplicate);
-
-        // Liberar la memoria asignada
         free(duplicate);
-    } else {
-        // Manejar la falla de asignación de memoria
+    } else 
         printf("Error al duplicar la cadena.\n");
-    }
 
     return 0;
 }*/

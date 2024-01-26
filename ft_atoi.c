@@ -6,7 +6,7 @@
 /*   By: cgaratej <cgaratej@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/15 15:34:24 by cgaratej          #+#    #+#             */
-/*   Updated: 2024/01/15 17:15:59 by cgaratej         ###   ########.fr       */
+/*   Updated: 2024/01/26 13:25:40 by cgaratej         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,3 +39,21 @@ int	ft_atoi(const char *nptr)
 	result *= simbol;
 	return (result);
 }
+
+/*#include <stdio.h>
+
+int	main(void)
+{
+	int num0 = ft_atoi("	 		  -557");
+	int num1 = ft_atoi("	 		  -557sdfasdf");
+	int num2 = ft_atoi("	 		  ---557sdfasdf");
+	int num3 = ft_atoi("	 		  +557sdfasdf");
+	int num4 = ft_atoi("	 		  +-9557sdfasdf");
+
+	printf("%d\n", num0);
+	printf("%d\n", num1);
+	printf("%d\n", num2);
+	printf("%d\n", num3);
+	printf("%d\n", num4);
+	return (0);
+}*/

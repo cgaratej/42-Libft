@@ -6,12 +6,11 @@
 /*   By: cgaratej <cgaratej@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/25 12:09:28 by cgaratej          #+#    #+#             */
-/*   Updated: 2024/01/25 18:44:24 by cgaratej         ###   ########.fr       */
+/*   Updated: 2024/01/26 13:11:02 by cgaratej         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
 static int	count_words(char const *s, char c)
 {
@@ -75,7 +74,9 @@ char	**ft_split(char const *s, char c)
 	return (words);
 }
 
-/*int main(void)
+/*#include <stdio.h>
+
+int main(void)
 {
 	char **words = ft_split("^^^1^^2a,^^^^3^^^^--h^^^^", '5');
 	while (*words)

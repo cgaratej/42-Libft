@@ -6,7 +6,7 @@
 /*   By: cgaratej <cgaratej@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/09 16:03:31 by cgaratej          #+#    #+#             */
-/*   Updated: 2024/01/11 15:54:45 by cgaratej         ###   ########.fr       */
+/*   Updated: 2024/01/26 15:16:50 by cgaratej         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,3 +27,14 @@ void	*ft_memset(void *str, int value, size_t len)
 	}
 	return (str);
 }
+
+/*#include <stdio.h>
+
+int main() {
+    char myString[] = "hola, mundo";
+
+    printf("Antes de ft_memset: %s\n", myString);
+    ft_memset(myString, 's', 5);
+    printf("Después de ft_memset: %s\n", myString);
+    return (0);
+}*/
