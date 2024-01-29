@@ -6,7 +6,7 @@
 /*   By: cgaratej <cgaratej@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/12 16:06:42 by cgaratej          #+#    #+#             */
-/*   Updated: 2024/01/17 18:17:29 by cgaratej         ###   ########.fr       */
+/*   Updated: 2024/01/29 11:52:44 by cgaratej         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,10 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 	return (j);
 }
 
-/*int main() {
+/*#include <stdio.h>
+
+int main(void) 
+{
     const char *str1 = "saricot";
     const char *str2 = "sapel";
     size_t n = 2;
@@ -48,5 +51,5 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
         printf("%s es lexicográficamente mayor que %s.\n", str1, str2);
     }
 
-    return 0;
+    return (0);
 }*/

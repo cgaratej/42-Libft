@@ -6,7 +6,7 @@
 /*   By: cgaratej <cgaratej@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/10 16:29:24 by cgaratej          #+#    #+#             */
-/*   Updated: 2024/01/17 16:48:52 by cgaratej         ###   ########.fr       */
+/*   Updated: 2024/01/29 11:51:09 by cgaratej         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,15 +35,14 @@ size_t	ft_strlcat(char *dest, const char *src, size_t size)
 	return (src_len);
 }
 
-/*#include <string.h>
-#include <stdio.h>
+/*#include <stdio.h>
 
-int main() {
-
-    size_t concatenated_size = 
-		strlcat("pqrstuvwxyz", "abcd", 5);
-
-    printf("Tamaño total de la cadena concatenada: %zu\n", concatenated_size);
-
-    return 0;
+int main(void)
+{
+	char destino[20] = "Hola, ";
+    const char fuente[] = "mundo!";
+    size_t len = ft_strlcat(destino, fuente, 8);
+    printf("Cadena resultante: %s\n", destino);
+    printf("Longitud total sin límite: %zu\n", len);
+	return (0);
 }*/

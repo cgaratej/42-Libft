@@ -1,40 +1,39 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_lstnew_bonus.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cgaratej <cgaratej@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/01/09 16:03:31 by cgaratej          #+#    #+#             */
-/*   Updated: 2024/01/29 11:34:25 by cgaratej         ###   ########.fr       */
+/*   Created: 2024/01/29 12:09:04 by cgaratej          #+#    #+#             */
+/*   Updated: 2024/01/29 19:03:45 by cgaratej         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memset(void *str, int value, size_t len)
+t_list	*ft_lstnew(void *content)
 {
-	int				i;
-	unsigned char	*c;
+	t_list	*lst;
 
-	i = 0;
-	c = (unsigned char *)str;
-	while (len > 0)
-	{
-		c[i] = value;
-		i++;
-		len--;
-	}
-	return (str);
+	lst = (t_list *)malloc(sizeof(*lst));
+	if (!lst)
+		return (NULL);
+	lst->content = content;
+	lst->next = NULL;
+	return (lst);
 }
 
 /*#include <stdio.h>
 
-int main() {
-    char myString[] = "hola, mundo";
+int main(void)
+{
 
-    printf("Antes de ft_memset: %s\n", myString);
-    ft_memset(myString, 's', 5);
-    printf("Después de ft_memset: %s\n", myString);
+    t_list *newNode = ft_lstnew("Hello, World!");
+    if (newNode == NULL)
+        return (1);
+    printf("Contenido del nuevo nodo: %s\n", (char *)newNode->content);
+    free(newNode);
+
     return (0);
 }*/

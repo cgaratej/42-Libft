@@ -6,7 +6,7 @@
 /*   By: cgaratej <cgaratej@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/15 14:14:27 by cgaratej          #+#    #+#             */
-/*   Updated: 2024/01/18 15:23:14 by cgaratej         ###   ########.fr       */
+/*   Updated: 2024/01/29 11:56:04 by cgaratej         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,9 +27,8 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 		i++;
 	return (ch1[i] - ch2[i]);
 }
-/*
-#include <stdio.h>
-#include <string.h>
+/*#include <stdio.h>
+
 int main() {
     const char *str1 = "abcdefghij";
     const char *str2 = "abcdefgxyz";
@@ -45,5 +44,5 @@ int main() {
         printf("es mayor.\n");
     }
 
-    return 0;
+    return (0);
 }*/

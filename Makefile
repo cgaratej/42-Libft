@@ -6,7 +6,7 @@
 #    By: cgaratej <cgaratej@student.42barcel>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/01/17 12:27:13 by cgaratej          #+#    #+#              #
-#    Updated: 2024/01/25 12:10:28 by cgaratej         ###   ########.fr        #
+#    Updated: 2024/01/29 18:40:12 by cgaratej         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -45,11 +45,23 @@ SRC=ft_isalpha.c \
 	ft_putchar_fd.c \
 	ft_putstr_fd.c \
 	ft_putendl_fd.c \
-	ft_putnbr_fd.c
+	ft_putnbr_fd.c 
+
+BONUS= ft_lstnew.c \
+	ft_lstadd_front.c \
+	ft_lstsize.c \
+	ft_lstlast.c \
+	ft_lstadd_back.c \
+	ft_lstdelone.c \
+	ft_lstclear.c \
+	ft_lstiter.c \
+	ft_lstmap.c
+
+OBJ_BONUS=$(BONUS:.c=.o)
 
 OBJ=$(SRC:.c=.o)
 
-CC=gcc
+CC=cc
 
 CFLAGS=-Wall -Wextra -Werror
 
@@ -68,11 +80,14 @@ $(NAME): $(OBJ)
 	$(CC) $(CFLAGS) -o $@ -c $<
 
 clean:
-	$(RM) $(OBJ)
+	$(RM) $(OBJ) $(OBJ_BONUS)
 
 fclean: clean
 	$(RM) $(NAME)
 
 re:	fclean all
 
-.PHONY: all clean fclean re
+bonus: $(BONUS) $(OBJ_BONUS)
+	$(LIB) $(NAME) $(OBJ) $(OBJ_BONUS)
+
+.PHONY: all clean fclean re bonus

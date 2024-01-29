@@ -6,7 +6,7 @@
 /*   By: cgaratej <cgaratej@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/09 16:34:45 by cgaratej          #+#    #+#             */
-/*   Updated: 2024/01/26 15:17:07 by cgaratej         ###   ########.fr       */
+/*   Updated: 2024/01/29 11:54:23 by cgaratej         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,8 @@ void	ft_bzero(void *str, size_t n)
 
 /*#include <stdio.h>
 
-int main() {
+int main(void)
+{
     char myString[] = "hola, mundo";
 
     printf("Antes de ft_bzero: %s\n", myString);

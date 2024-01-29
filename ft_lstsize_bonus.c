@@ -1,40 +1,50 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_lstsize_bonus.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cgaratej <cgaratej@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/01/09 16:03:31 by cgaratej          #+#    #+#             */
-/*   Updated: 2024/01/29 11:34:25 by cgaratej         ###   ########.fr       */
+/*   Created: 2024/01/29 13:18:28 by cgaratej          #+#    #+#             */
+/*   Updated: 2024/01/29 19:03:49 by cgaratej         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memset(void *str, int value, size_t len)
+int	ft_lstsize(t_list *lst)
 {
-	int				i;
-	unsigned char	*c;
+	int	i;
 
 	i = 0;
-	c = (unsigned char *)str;
-	while (len > 0)
+	while (lst)
 	{
-		c[i] = value;
+		lst = lst->next;
 		i++;
-		len--;
 	}
-	return (str);
+	return (i);
 }
 
 /*#include <stdio.h>
 
-int main() {
-    char myString[] = "hola, mundo";
+int	main(void)
+{
+    t_list *node1 = ft_lstnew("Node 1");
+    t_list *node2 = ft_lstnew("Node 2");
+    t_list *node3 = ft_lstnew("Node 3");
 
-    printf("Antes de ft_memset: %s\n", myString);
-    ft_memset(myString, 's', 5);
-    printf("Después de ft_memset: %s\n", myString);
+    t_list *myList = NULL;
+    ft_lstadd_front(&myList, node3);
+    ft_lstadd_front(&myList, node2);
+    ft_lstadd_front(&myList, node1);
+
+	int len = ft_lstsize(myList);
+
+    printf("size de lista: %d\n", len);
+
+    free(node1);
+    free(node2);
+    free(node3);
+
     return (0);
 }*/

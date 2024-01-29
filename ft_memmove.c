@@ -6,7 +6,7 @@
 /*   By: cgaratej <cgaratej@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/10 11:25:18 by cgaratej          #+#    #+#             */
-/*   Updated: 2024/01/17 14:06:09 by cgaratej         ###   ########.fr       */
+/*   Updated: 2024/01/29 11:27:28 by cgaratej         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,11 +35,11 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	return (dest);
 }
 
-// #include <stdio.h>
-
-// int main()
-// {
-// 	char str[9] = "ABCDEF--";
-// 	printf("%s\n", ft_memmove(str + 2, str, 6));
-// 	return 0;
-// }
+/*#include <stdio.h>
+int main()
+{
+	char str[9] = "ABCDEF--";
+	printf("Con memmove: %s\n", ft_memmove(str + 2, str, 6));
+	printf("Con memcpy: %s\n", ft_memcpy(str + 2, str, 6));
+	return 0;
+}*/

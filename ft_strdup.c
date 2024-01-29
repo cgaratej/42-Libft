@@ -6,7 +6,7 @@
 /*   By: cgaratej <cgaratej@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/18 17:38:12 by cgaratej          #+#    #+#             */
-/*   Updated: 2024/01/26 15:39:25 by cgaratej         ###   ########.fr       */
+/*   Updated: 2024/01/29 11:56:35 by cgaratej         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,8 @@ char	*ft_strdup(const char *s1)
 
 /*#include <stdio.h>
 
-int main() {
+int main(void)
+{
     const char *original = "Hola, Mundo!";
     
     char *duplicate = ft_strdup(original);
@@ -47,5 +48,5 @@ int main() {
     } else 
         printf("Error al duplicar la cadena.\n");
 
-    return 0;
+    return (0);
 }*/

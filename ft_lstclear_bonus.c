@@ -1,40 +1,43 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_lstclear_bonus.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cgaratej <cgaratej@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/01/09 16:03:31 by cgaratej          #+#    #+#             */
-/*   Updated: 2024/01/29 11:34:25 by cgaratej         ###   ########.fr       */
+/*   Created: 2024/01/29 14:28:03 by cgaratej          #+#    #+#             */
+/*   Updated: 2024/01/29 19:03:20 by cgaratej         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memset(void *str, int value, size_t len)
+void	ft_lstclear(t_list **lst, void (*del)(void*))
 {
-	int				i;
-	unsigned char	*c;
+	t_list	*tmp;
 
-	i = 0;
-	c = (unsigned char *)str;
-	while (len > 0)
+	if (!del || !lst || !*lst)
+		return ;
+	while (lst && *lst)
 	{
-		c[i] = value;
-		i++;
-		len--;
+		tmp = (*lst)->next;
+		ft_lstdelone(*lst, del);
+		*lst = tmp;
 	}
-	return (str);
 }
 
 /*#include <stdio.h>
 
-int main() {
-    char myString[] = "hola, mundo";
+void	delete_content(void *content)
+{
+	free(content);
+}
 
-    printf("Antes de ft_memset: %s\n", myString);
-    ft_memset(myString, 's', 5);
-    printf("Después de ft_memset: %s\n", myString);
+int main(void) 
+{
+    t_list *node1 = ft_lstnew(ft_strdup("node 1"));
+    t_list *node2 = ft_lstnew(ft_strdup("node 2"));
+	ft_lstadd_back(&node1, node2);
+	ft_lstclear(&node1, delete_content);
     return (0);
 }*/

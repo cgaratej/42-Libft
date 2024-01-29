@@ -6,7 +6,7 @@
 /*   By: cgaratej <cgaratej@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/12 15:42:57 by cgaratej          #+#    #+#             */
-/*   Updated: 2024/01/18 12:57:59 by cgaratej         ###   ########.fr       */
+/*   Updated: 2024/01/29 11:52:52 by cgaratej         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,6 @@ char	*ft_strrchr(const char *s, int c)
 }
 
 /*#include <stdio.h>
-#include <string.h>
 
 int main() {
     const char *str = "";
@@ -43,5 +42,5 @@ int main() {
         printf("Carácter '%c' no encontrado en la cadena.\n", target_char);
     }
 
-    return 0;
+    return (0);
 }*/

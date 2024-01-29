@@ -6,7 +6,7 @@
 /*   By: cgaratej <cgaratej@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/23 11:13:58 by cgaratej          #+#    #+#             */
-/*   Updated: 2024/01/23 16:02:46 by cgaratej         ###   ########.fr       */
+/*   Updated: 2024/01/29 11:55:33 by cgaratej         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -76,4 +76,5 @@ int main(void)
 	char *h = ft_itoa(55);
 
 	printf("%s\n", h);
+	return (0);
 }*/

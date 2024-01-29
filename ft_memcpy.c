@@ -6,7 +6,7 @@
 /*   By: cgaratej <cgaratej@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/09 16:38:16 by cgaratej          #+#    #+#             */
-/*   Updated: 2024/01/26 15:17:00 by cgaratej         ###   ########.fr       */
+/*   Updated: 2024/01/29 11:55:50 by cgaratej         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 
 /*#include <stdio.h>
 
-int main()
+int main(void)
 {
     char src[] = "hola, mundo";
     char dest[20];
