@@ -6,13 +6,13 @@
 /*   By: cgaratej <cgaratej@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/23 11:13:58 by cgaratej          #+#    #+#             */
-/*   Updated: 2024/01/29 11:55:33 by cgaratej         ###   ########.fr       */
+/*   Updated: 2024/01/30 14:57:11 by cgaratej         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_getint_len(int n)
+static int	ft_getint_len(int n)
 {
 	int	len;
 
@@ -29,7 +29,7 @@ int	ft_getint_len(int n)
 	return (len);
 }
 
-void	ft_fill_str(char *str, int n, int len)
+static void	ft_fill_str(char *str, int n, int len)
 {
 	int	i;
 
@@ -56,9 +56,7 @@ char	*ft_itoa(int n)
 {
 	int		len;
 	char	*str;
-	int		i;
 
-	i = 0;
 	len = ft_getint_len(n);
 	if (n == -2147483648)
 		return (ft_strdup("-2147483648"));
