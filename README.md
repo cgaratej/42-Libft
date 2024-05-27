@@ -2,7 +2,7 @@
     <h1>Libft</h1>
     <img src="https://raw.githubusercontent.com/yowcloud/yowcloud-my-utils/main/badge_00_libft_500px.png" style="width: 150px; height: 150px;">
 </div>
-## Proyecto de Biblioteca de Funciones en C
+<h2>LibftProyecto de Biblioteca de Funciones en C</h2>
 
 Este repositorio contiene mi primer proyecto en 42Barcelona, donde he desarrollado una biblioteca de funciones en C recreando diversas funciones estándar de la biblioteca de C, como `strlen` entre otras.
 
